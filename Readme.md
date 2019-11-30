@@ -1,6 +1,6 @@
 # SOTA NLP Workshop @ YouScan
 
-For the last year there was a big progress in NLP and now it is easier to build a good prototype for your product.
+For the last year there was a big progress in NLP, and now it is easier to build a good prototype for your product.
 We will show how to solve three tasks really quickly with a small effort.
 
 We will use [transformers](https://github.com/huggingface/transformers) library under the hood.
@@ -17,18 +17,18 @@ Simple language generation with GPT-2 model.
 We provide command line interface with the next params:
 
 * main parameters:
-    * input_text – starting point of over generation
+    * input_text – starting point of our generation
     * n_sentences – number of sentences to generate
     
 * technical:
-    * temperature – technical parameter for more random generation
+    * temperature – technical parameter to add some randomness
     * repetition_penalty – penalize model for repetition
     * top_k – choose prediction from k most probable tokens
     * top_p – choose prediction from the top tokens with cumulative probability >= top_p
 
 Run `python language_generation.py --input_text="Write some text"`
 
-## Choose best answer
+## Choose the best answer
 
 The task is to find the best answer from the list to the asked question. 
 
@@ -47,9 +47,9 @@ Questions:
 Run `python choose_best_answer.py --question="How are you?"`
 
 
-## Find the answer in paragraph
+## Find the answer in the paragraph
 
-The task is to find answer to question based on provided document.
+The task is to find the answer to the question based on the provided document.
 
 We provide command line interface with the next params:
 * question – the question, we must find the answer to
